@@ -328,7 +328,7 @@ ul {
   color: #FFFFFF;
 }
 .main__block-item {
-  width: 265px;
+  width: 275px;
   height: 145px;
   text-align: center;
 }
@@ -340,6 +340,16 @@ ul {
   font-size: 20px;
   font-weight: 600;
   line-height: 32px;
+}
+
+.main__catalog {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.main__catalog-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .hidden {
@@ -428,4 +438,91 @@ ul {
   font-size: 24px;
   font-weight: 600;
   color: #E8AA31;
+}
+
+.catalog__card {
+  width: 431px;
+  height: 293px;
+  background-color: #FFFFFF;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  padding-top: 30px;
+  padding-bottom: 62px;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+.catalog__title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+  color: #141414;
+  margin-bottom: 15px;
+}
+.catalog__line {
+  position: relative;
+  margin-top: 15px;
+}
+.catalog__line::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 68px;
+  height: 2px;
+  background-color: #E8AA31;
+}
+.catalog__list {
+  margin-top: 60px;
+}
+.catalog__item {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 34px;
+  position: relative;
+  padding-left: 20px;
+}
+.catalog__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  background-color: #E8AA31;
+  border-radius: 50%;
+}
+
+.bg-card-01 {
+  background: url("../assets/img/catalog-section/1.png") center/60% no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+.bg-card-02 {
+  background: url("../assets/img/catalog-section/2.png") center/60% no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+.bg-card-03 {
+  background: url("../assets/img/catalog-section/3.png") center/60% no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+.bg-card-04 {
+  background: url("../assets/img/catalog-section/4.png") center/60% no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+.bg-card-05 {
+  background: url("../assets/img/catalog-section/5.png") center/60% no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+.bg-card-06 {
+  background: url("../assets/img/catalog-section/6.png") center/60% no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
 }/*# sourceMappingURL=main.css.map */

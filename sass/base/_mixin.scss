@@ -5,3 +5,9 @@
     font-size: $size;
     font-weight: $weight;
 }
+
+@mixin position-bg-for-cards($url){
+    background: url($url) center / 60% no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+}

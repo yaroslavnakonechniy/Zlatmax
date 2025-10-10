@@ -1,0 +1,89 @@
+
+@use '../base/variables' as *;
+@use '../base/mixin' as *;
+
+.catalog {
+
+    &__card {
+        width: 431px;
+        height: 293px;
+        background-color: $color-for-text-white;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        padding-top: 30px;
+        padding-bottom: 62px;
+        padding-left: 30px;
+        box-sizing: border-box;
+    }
+
+    &__title {
+        @include size-weight(24px, 600);
+        line-height: 34px;
+        color: $bg-dark;
+        margin-bottom: 15px;
+
+    }
+
+    &__line {
+        position: relative;
+        margin-top: 15px;
+
+        &::after{
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 68px;
+            height: 2px;
+            background-color: $color-for-active-text;
+        }
+    }
+
+    &__list {
+        margin-top: 60px;
+    }
+
+    &__item {
+        
+        @include size-weight(18px, 500);
+        line-height: 34px;
+
+        position: relative;
+        padding-left: 20px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 8px;
+            height: 8px;
+
+            background-color: $color-for-active-text;
+            border-radius: 50%;
+        }
+    }
+}
+
+.bg-card-01{
+    @include position-bg-for-cards('../assets/img/catalog-section/1.png');
+}
+
+.bg-card-02{
+    @include position-bg-for-cards('../assets/img/catalog-section/2.png');
+}
+
+.bg-card-03{
+    @include position-bg-for-cards('../assets/img/catalog-section/3.png');
+}
+
+.bg-card-04{
+    @include position-bg-for-cards('../assets/img/catalog-section/4.png');
+}
+
+.bg-card-05{
+    @include position-bg-for-cards('../assets/img/catalog-section/5.png');
+}
+
+.bg-card-06{
+    @include position-bg-for-cards('../assets/img/catalog-section/6.png');
+}
