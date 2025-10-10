@@ -1,0 +1,16 @@
+
+@use '../base/variables' as *;
+
+.main{
+    &__catalog{
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+    }
+
+    &__catalog-cards{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
