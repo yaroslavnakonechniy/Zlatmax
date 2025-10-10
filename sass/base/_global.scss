@@ -1,0 +1,39 @@
+
+
+@use '../base/variables' as *;
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: $color-for-text-white;
+}
+
+a {
+  display: inline-block; /* обов’язково для transform */
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $color-for-active-text;
+  transition: color 0.5s ease;
+}
+
+button {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  color: $color-for-text-white;
+  background-color: $color-for-active-text-hover;
+  transition: background-color 1s ease, transform 2s ease;
+}
+
+button:active {
+  transform: scale(0.55);
+}
+
+ul{
+    list-style: none;
+}

@@ -1,0 +1,22 @@
+
+@use '../base/variables' as *;
+
+.hidden{
+    display: none;
+}
+
+.title-bold{
+    font-weight: 700;
+}
+
+.text-800{
+    font-weight: 900;
+}
+
+.text-400{
+    font-weight: 600;
+}
+
+.text-100{
+    font-weight: 100;
+}

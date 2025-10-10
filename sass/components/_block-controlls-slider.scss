@@ -1,0 +1,68 @@
+
+
+@use '../base/variables' as *;
+@use '../base/mixin' as *;
+
+.block-controlls{
+    display: flex;
+}
+
+.controlls-line{
+
+    display: flex;
+    gap: 30px;
+    padding-right: 40px;
+    
+    
+}
+
+.pagination-line{
+    position: relative;
+    
+    &::before{
+        position: absolute;
+        content: '';
+        top: 10px;
+        left: 0;
+        width: 18px;
+        height: 2px;
+        background-color: $color-for-text-white;
+    }
+}
+
+.pagination-line-active{
+    position: relative;
+
+    &::before{
+        background-color: $color-for-active-text;
+    }
+
+    &::after{
+        position: absolute;
+        content: '';
+        top: 7px;
+        left: 0;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: $color-for-active-text;
+        animation: slide 2s ease-in-out infinite normal;
+    }
+
+
+}
+
+@keyframes slide {
+        from{left: 0; }
+        to  {left: 15px; };
+}
+
+.pagination-number{
+    @include size-weight(18px, 600);
+    color: $color-for-text-white;
+}
+
+.pagination-number-active{
+    @include size-weight(24px, 600);
+    color: $color-for-active-text;
+}

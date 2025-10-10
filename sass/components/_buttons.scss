@@ -1,0 +1,9 @@
+
+@use '../base/variables' as *;
+
+.btn-button{
+    border: none;
+    border-radius: 3px;
+    color: $color-for-text-white;
+    background-color: $color-for-active-text;
+}
