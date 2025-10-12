@@ -1,8 +1,39 @@
 
 @use '../base/variables' as *;
+@use '../base/mixin' as *;
 
 .hidden{
     display: none;
+}
+
+.title{
+    @include size-weight(30px, 700);
+    line-height: 46px;
+    letter-spacing: 5%;
+}
+
+.paragraph{
+    @include size-weight(18px, 500);
+    line-height: 27px;
+    letter-spacing: 3%;
+    color: $color-for-paragraph;
+}
+
+.link-arrow{
+    position: relative;
+    padding-right: 20px;
+    line-height: 46px;
+    letter-spacing: 5%;
+    margin-right: 40px;
+    &::after{
+        position: absolute;
+        content: "";
+        top: 18px;
+        right: 0;
+        width: 10px;
+        height: 10px;
+        background: url('../assets/icon/arrow/orange-arrow.svg') right / cover no-repeat;
+    }
 }
 
 .title-bold{
