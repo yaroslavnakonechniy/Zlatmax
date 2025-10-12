@@ -3,9 +3,10 @@
 @use '../base/mixin' as *;
 
 .catalog {
+    margin: 0 auto;
 
     &__card {
-        width: 431px;
+        width: 450px;
         height: 293px;
         background-color: $color-for-text-white;
         box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
