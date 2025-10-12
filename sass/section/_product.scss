@@ -1,0 +1,239 @@
+
+@use '../base/variables' as *;
+@use '../base/mixin' as *;
+
+.product {
+
+		&__body {
+		}
+
+		&__header {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            margin-bottom: 60px;
+		}
+
+		&__title {
+            @include size-weight(30px, 700);
+            color: $bg-dark;
+            line-height: 46px;
+            letter-spacing: 5%;
+
+		}
+
+		&__link {
+            position: relative;
+            padding-right: 20px;
+            @include size-weight(18px, 600);
+            color: $color-for-actions-button;
+            line-height: 46px;
+            letter-spacing: 5%;
+            margin-right: 40px;
+
+            &::after{
+                position: absolute;
+                content: "";
+                top: 18px;
+                right: 0;
+                width: 10px;
+                height: 10px;
+                background: url('../assets/icon/arrow/orange-arrow.svg') right / cover no-repeat;
+            }
+		}
+
+		&__carusel {
+            display: flex;
+            flex-direction: column;
+		}
+
+        &__cards{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        &__image{
+            width: 270px;
+            height: 240px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+
+		&__card {
+            display: flex;
+            flex-direction: column;
+            width: 328px;
+            box-sizing: border-box;
+            padding: 20px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+		}
+
+		&__name {
+            @include size-weight(20px, 600);
+            line-height: 34px;
+            letter-spacing: 0%;
+            color: $bg-dark;
+		}
+
+		&__parametrs {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 11px;
+		}
+
+		&__size,  &__made{
+            @include size-weight(16px, 600);
+            line-height: 34px;
+            color: $color-for-actions;
+		}
+
+		&__rating {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            color: $color-for-actions;
+            @include size-weight(16px, 500);
+            padding-bottom: 26px;
+            line-height: 34px;
+
+            &::after{
+                position: absolute;
+                content: "";
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background-color: $color-for-actions;
+            }
+		}
+
+		&__actions {
+            display: flex;
+            justify-content: space-between;
+		}
+
+		&__price {
+            @include size-weight(20px, 600);
+            line-height: 34px;
+            color: $color-for-text-dark;
+            margin-top: 20px;
+            margin-bottom: 26px;
+		}
+
+		&__compare {
+            position: relative;
+            padding-left: 26px;
+            &::before{
+                position: absolute;
+                content: "";
+                top: 20px;
+                left: 80px;
+                width: 26px;
+                height: 25px;
+                background: url('../assets/icon/compare/compare.svg') center / contain no-repeat;
+            }
+		}
+
+		&__favorite {
+            position: relative;
+            padding-left: 28px;
+            &::before{
+                position: absolute;
+                content: "";
+                top: 20px;
+                left: 0;
+                width: 30px;
+                height: 25px;
+                background: url('../assets/icon/like/orange-likes.svg') center / contain no-repeat;
+            }
+		}
+
+		&__button {
+            @include size-weight(18px, 600);
+            line-height: 46px;
+            color: $color-for-text-white;
+		}
+
+        &__pagination{
+            margin: 0 auto;
+            margin-top: 60px;
+            margin-bottom: 160px;
+        }
+}
+
+.rating {
+
+		&__items {
+		}
+
+		&__item {
+
+            appearance: none;        // прибирає стандартний вигляд radio
+            position: relative;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+
+            &::before {
+                content: "★";          
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 24px;
+                color: #ccc;            
+                transition: color 0.3s ease;
+            }
+
+            &:checked::before {
+                color: gold;            
+            }
+
+            &:hover::before {
+                color: orange;          
+            }
+
+            /*
+            position: relative;
+            padding-left: 27px;
+            &:checked{
+                transform: scale(0);
+            }
+            
+            &::before{
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                width: 22px;
+                height: 22px;
+                background: url("../assets/icon/star/star.svg") center / cover no-repeat;
+            }
+                */
+		}
+
+		&__info {
+		}
+}
+
+.icon-basket {
+    position: relative;
+    padding-right: 30px;
+
+    &::after{
+        position: absolute;
+        content: '';
+        top: 2px;
+        right: 0;
+        width: 19px;
+        height: 17px;
+        background: url('../assets/icon/basket/white-basket.svg') center / contain no-repeat;
+    }
+}
+
+.icon-compare{
+}
+
+.icon-favorite{
+}

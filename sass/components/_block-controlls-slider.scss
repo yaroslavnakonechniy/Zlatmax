@@ -8,12 +8,9 @@
 }
 
 .controlls-line{
-
     display: flex;
     gap: 30px;
     padding-right: 40px;
-    
-    
 }
 
 .pagination-line{
@@ -27,6 +24,10 @@
         width: 18px;
         height: 2px;
         background-color: $color-for-text-white;
+    }
+
+    &--bg-grey::before {  
+        background-color: $color-for-actions-button;
     }
 }
 
@@ -48,8 +49,6 @@
         background-color: $color-for-active-text;
         animation: slide 2s ease-in-out infinite normal;
     }
-
-
 }
 
 @keyframes slide {
