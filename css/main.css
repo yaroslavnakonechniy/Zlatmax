@@ -595,6 +595,11 @@ ul {
   margin-top: 40px;
 }
 
+.main__shares {
+  padding-top: 120px;
+  padding-bottom: 50px;
+}
+
 .hidden {
   display: none;
 }
