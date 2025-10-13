@@ -1,0 +1,171 @@
+
+@use '../base/variables' as *;
+@use '../base/mixin' as *;
+
+.footer {
+
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('../assets/img/footer/footer.jpg') center / cover no-repeat;
+
+		&__header {
+            padding: 60px 0;
+		}
+
+		&__title {
+            text-align: center;
+            color: $color-for-active-text;
+            margin-bottom: 30px;
+		}
+
+		&__content {
+            background: $color-for-bg-footer;
+		}
+
+		&__container {
+            padding-top: 102px;
+            padding-bottom: 49px;
+            
+		}
+
+		&__info-blok,  &__contacts{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+		}
+        
+        &__form {
+            padding-top: 20px;
+            padding-bottom: 20px;
+		}
+
+		&__copy-right {
+            display: flex;
+            justify-content: space-between;
+            @include size-weight(14px, 500);
+            color: $color-for-list-link;
+            margin-top: 20px;
+		}
+}
+
+.info-blok {
+
+		&__item {
+            width: 280px;
+		}
+
+		&__title {
+            @include size-weight(18px, 600);
+            color: $color-for-list-title;
+            text-transform: uppercase;
+            margin-bottom: 23px;
+		}
+
+		&__navigation {
+		}
+
+		&__list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+		}
+
+		&__list-item {
+		}
+
+		&__list-link {
+            @include size-weight(18px, 500);
+            line-height: 27px;
+            color: $color-for-list-link;
+		}
+}
+.phone {
+    @include contacts-icon ('../assets/icon/contacts/icon-phone.svg');
+}
+.time {
+    @include contacts-icon ('../assets/icon/contacts/icon-time.svg');
+}
+.location {
+    @include contacts-icon ('../assets/icon/contacts/icon-location.svg');
+}
+.gmail {
+    @include contacts-icon ('../assets/icon/contacts/icon-gmail.svg');
+}
+
+.form {
+
+		&__gmail {
+            margin-bottom: 30px;
+            position: relative;
+		}
+
+		&__gmail-input {
+            width: 230px;
+            height: 30px;
+            border: 1px solid $color-for-list-link;
+            border-radius: 3px;
+            background-color: $color-for-input-form;
+		}
+
+		&__button {
+            position: absolute;
+            top: 12px;
+            left: -10px;
+            width: 36px;
+            height: 34.5px;
+            position: relative;
+            padding-left: 20px;
+            border-radius: 3px;
+            border: none;
+            background-color: $color-for-active-text;
+
+            &::before{
+                position: absolute;
+                content: '';
+                top: 7px;
+                left: 7px;
+                width: 20px;
+                height: 20px;
+                background: url('../assets/icon/arrow/wihte-arrow.svg') center / contain no-repeat;
+
+            }
+		}
+
+		&__check {
+		}
+
+		&__check-input {
+		}
+
+		&__check-label {
+            @include size-weight(16px, 500);
+            line-height: 22px;
+            color: $color-for-list-link;
+		}
+}
+
+.social-blok {
+
+		&__list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+
+		}
+
+		&__item {
+		}
+
+		&__link {
+		}
+}
+.copy-right {
+
+		&__text {
+            line-height: 20px;
+		}
+
+		&__gmail {
+		}
+}

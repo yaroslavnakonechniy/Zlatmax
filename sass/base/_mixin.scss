@@ -11,3 +11,17 @@
     background-position-x: right;
     background-position-y: bottom;
 }
+
+@mixin contacts-icon ($url){
+    position: relative;
+    padding-left: 30px;
+    &::before{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background: url($url) center / contain no-repeat;
+    }
+}
