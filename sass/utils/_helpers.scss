@@ -53,6 +53,11 @@
             }
 }
 
+.active--link{
+    @include size-weight(16px, 500);
+    color: $color-for-active-text;
+}
+
 .title-bold{
     font-weight: 700;
 }

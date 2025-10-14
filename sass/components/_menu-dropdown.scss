@@ -1,0 +1,68 @@
+
+@use '../base/variables' as *;
+@use '../base/mixin' as *;
+
+.menu__dropdown{
+    
+
+}
+
+.menu {
+
+		&__dropdown {
+                  display: none;
+                  position: absolute;
+                  width: 100%;
+                  background-color: $bg-dark;
+                  z-index: 99;
+
+		}
+
+            &__body{
+                  padding-bottom: 40px;
+            }
+
+		&__navigation {
+		}
+
+		&__list-title {
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 30px;
+                  position: relative;
+		}
+
+            &__item-title{
+                  width: 220px;
+                  @include size-weight(16px, 700);
+                  color: $color-for-list-title;
+            }
+
+            &__list-item {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 30px;
+                  position: relative;
+		}
+
+		&__item {
+                  width: 220px;
+		}
+
+            &__link{
+                  @include size-weight(16px, 500);
+                  color: $color-for-text-white;
+                  line-height: 100%;
+            }
+
+            &__lists-item{
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap:30px;
+            }
+}
+
+.active-menu {
+      display: block;
+}
+
