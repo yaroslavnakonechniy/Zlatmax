@@ -19,7 +19,6 @@
 		&__list {
             display: flex;
             gap: 60px;
-
 		}
 
 		&__item {
@@ -83,7 +82,6 @@
                 height: 12px;
                 background: url('../assets/icon/search/search.svg') 0 0  no-repeat;
             }
-
         }
 
 
@@ -95,7 +93,6 @@
             border-radius: 3px;
             background-color: $bg-for-input-text;
             padding-left: 40px;
-            
         }
 
 		&__actions {
@@ -127,49 +124,26 @@
 		}
 
 		&__phone {
+            position: relative;
             display: flex;
             flex-direction: column;
             gap: 3px;
 
-             @include size-weight(18px, 600);
+            @include size-weight(18px, 600);
 		}
+
+        &__numbers-box{
+            display: flex;
+            gap: 10px;
+        }
 
         &__phone-link{
            color: $bg-dark;
-           margin-right: 10px;
         }
 
         &__phone-call{
             color: $color-for-active-text;
         }
-
-        &__button-arrow{
-            position: relative;
-            padding-right: 20px;
-            color: $bg-dark;
-
-            &::after{
-                position: absolute;
-                content: '';
-                top: 5px;
-                right: -10px;
-                width: 100%;
-                height: 100%;
-                background: url('../assets/icon/arrow/buttom-orange-arrow.svg') 0 0 no-repeat;
-            }
-        }
-
-		&__numbers {
-		}
-
-		&__numbers-list {
-		}
-
-		&__numbers-item {
-		}
-
-		&__numbers-link {
-		}
 
 		&__favorite {
             width: 28px;
@@ -258,4 +232,60 @@
         width: 100%;
         background-color: $color-for-active-text;
     }
+}
+
+
+.button-arrow{
+        display: block;
+        padding-left: 16px;
+        color: $bg-dark;
+        cursor: pointer;
+
+        &::after{
+            position: absolute;
+            content: '';
+            top: 0;
+            right: 0;
+            width: 16px;
+            height: 16px;
+            background: url('../assets/icon/arrow/buttom-orange-arrow.svg') 0 0 no-repeat;
+            transform: rotate(0deg);
+            transform-origin: center center;
+            transition: transform 0.5s ease; 
+        }
+
+        &.active-arrow::after{
+            transform: rotate(-180deg);
+        }
+
+		&__numbers {
+            display: none;
+            position: absolute;
+            padding: 5px;
+            height: 70px;
+            top: 25px;
+            left: 10px;
+            border-radius: 3px;
+            box-shadow: 0 0 25px 1px $color-for-text-dark;
+            background-color: $color-for-text-white;
+            z-index: 99;
+
+		}
+
+		&__numbers-list {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+		}
+
+		&__numbers-item {
+		}
+
+		&__numbers-link {
+            color: $color-for-text-dark;
+		}
+}
+
+.active-menu {
+    display: block;
 }

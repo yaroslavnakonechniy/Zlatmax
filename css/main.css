@@ -182,32 +182,22 @@ ul {
   background: url("../assets/icon/contacts/icon-location.svg") 0 0 no-repeat;
 }
 .header__phone {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 3px;
   font-size: 18px;
   font-weight: 600;
 }
+.header__numbers-box {
+  display: flex;
+  gap: 10px;
+}
 .header__phone-link {
   color: #141414;
-  margin-right: 10px;
 }
 .header__phone-call {
   color: #E8AA31;
-}
-.header__button-arrow {
-  position: relative;
-  padding-right: 20px;
-  color: #141414;
-}
-.header__button-arrow::after {
-  position: absolute;
-  content: "";
-  top: 5px;
-  right: -10px;
-  width: 100%;
-  height: 100%;
-  background: url("../assets/icon/arrow/buttom-orange-arrow.svg") 0 0 no-repeat;
 }
 .header__favorite {
   width: 28px;
@@ -273,6 +263,52 @@ ul {
   height: 2px;
   width: 100%;
   background-color: #E8AA31;
+}
+
+.button-arrow {
+  display: block;
+  padding-left: 16px;
+  color: #141414;
+  cursor: pointer;
+}
+.button-arrow::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  background: url("../assets/icon/arrow/buttom-orange-arrow.svg") 0 0 no-repeat;
+  transform: rotate(0deg);
+  transform-origin: center center;
+  transition: transform 0.5s ease;
+}
+.button-arrow.active-arrow::after {
+  transform: rotate(-180deg);
+}
+.button-arrow__numbers {
+  display: none;
+  position: absolute;
+  padding: 5px;
+  height: 70px;
+  top: 25px;
+  left: 10px;
+  border-radius: 3px;
+  box-shadow: 0 0 25px 1px #000000;
+  background-color: #FFFFFF;
+  z-index: 99;
+}
+.button-arrow__numbers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.button-arrow__numbers-link {
+  color: #000000;
+}
+
+.active-menu {
+  display: block;
 }
 
 .footer {
@@ -784,83 +820,6 @@ ul {
   padding-bottom: 20px;
 }
 
-.hidden {
-  display: none;
-}
-
-.title {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 46px;
-  letter-spacing: 5%;
-}
-
-.paragraph {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 27px;
-  letter-spacing: 3%;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.link-arrow {
-  position: relative;
-  padding-right: 20px;
-  line-height: 46px;
-  letter-spacing: 5%;
-  margin-right: 40px;
-}
-.link-arrow::after {
-  position: absolute;
-  content: "";
-  top: 18px;
-  right: 0;
-  width: 10px;
-  height: 10px;
-  background: url("../assets/icon/arrow/orange-arrow.svg") right/cover no-repeat;
-}
-
-.line-for-footer {
-  position: relative;
-  padding-bottom: 30px;
-  margin-bottom: 40px;
-}
-.line-for-footer::after {
-  position: absolute;
-  content: "";
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-.active--link {
-  font-size: 16px;
-  font-weight: 500;
-  color: #E8AA31;
-}
-
-.title-bold {
-  font-weight: 700;
-}
-
-.text-800 {
-  font-weight: 900;
-}
-
-.text-400 {
-  font-weight: 600;
-}
-
-.text-100 {
-  font-weight: 100;
-}
-
-.mg-auto {
-  margin: 0 auto;
-}
-
 .btn-button {
   border: none;
   border-radius: 3px;
@@ -1164,4 +1123,81 @@ ul {
 
 .active-menu {
   display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: 5%;
+}
+
+.paragraph {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 3%;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.link-arrow {
+  position: relative;
+  padding-right: 20px;
+  line-height: 46px;
+  letter-spacing: 5%;
+  margin-right: 40px;
+}
+.link-arrow::after {
+  position: absolute;
+  content: "";
+  top: 18px;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background: url("../assets/icon/arrow/orange-arrow.svg") right/cover no-repeat;
+}
+
+.line-for-footer {
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+}
+.line-for-footer::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.active--link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #E8AA31;
+}
+
+.title-bold {
+  font-weight: 700;
+}
+
+.text-800 {
+  font-weight: 900;
+}
+
+.text-400 {
+  font-weight: 600;
+}
+
+.text-100 {
+  font-weight: 100;
+}
+
+.mg-auto {
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */
