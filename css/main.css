@@ -250,12 +250,16 @@ ul {
 .header__footer {
   background-color: #141414;
 }
+.header__navigation {
+  position: relative;
+}
 .header__link {
   position: relative;
 }
 
 .header-footer--list {
-  gap: 115px;
+  gap: 130px;
+  padding-bottom: 20px;
 }
 
 .active {
@@ -831,6 +835,12 @@ ul {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
+.active--link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #E8AA31;
+}
+
 .title-bold {
   font-weight: 700;
 }
@@ -1107,4 +1117,51 @@ ul {
   font-weight: 600;
   line-height: 46px;
   color: #FFFFFF;
+}
+
+.menu__dropdown {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: #141414;
+  z-index: 99;
+}
+.menu__body {
+  padding-bottom: 40px;
+}
+.menu__list-title {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  position: relative;
+}
+.menu__item-title {
+  width: 220px;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+.menu__list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+.menu__item {
+  width: 220px;
+}
+.menu__link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 100%;
+}
+.menu__lists-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.active-menu {
+  display: block;
 }/*# sourceMappingURL=main.css.map */

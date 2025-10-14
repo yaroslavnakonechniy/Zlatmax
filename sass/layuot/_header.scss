@@ -55,7 +55,6 @@
         }
 
         &__logo{
-
         }
 
 		&__search {
@@ -65,7 +64,6 @@
 		&__form {
             display: flex;
             position: relative;
-
 		}
 
         &__search-button{
@@ -228,14 +226,13 @@
 		}
 
 		&__navigation {
+            position: relative;
 		}
 
 		&__list {
-
 		}
 
 		&__item {
-
 		}
 
 		&__link {
@@ -245,7 +242,8 @@
 
 }
 .header-footer--list{
-    gap: 115px;
+    gap: 130px;
+    padding-bottom: 20px;
 }
 
 .active{
