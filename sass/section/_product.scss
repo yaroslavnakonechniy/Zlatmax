@@ -4,25 +4,6 @@
 
 .product {
 
-		&__body {
-		}
-
-		&__header {
-            display: flex;
-            justify-content: space-between;
-            text-align: center;
-            margin-bottom: 60px;
-		}
-
-		&__title {
-            color: $bg-dark;
-		}
-
-		&__link {
-            @include size-weight(18px, 600);
-            color: $color-for-actions-button;
-		}
-
 		&__carusel {
             display: flex;
             flex-direction: column;

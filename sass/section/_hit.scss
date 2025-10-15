@@ -1,8 +1,13 @@
 
+@use '../base/variables' as *;
+@use '../base/mixin' as *;
 
 .main{
     &__hit{
         padding-top: 20px;
         padding-bottom: 154px;
     }
+
+    &__hit-body {
+	}
 }
