@@ -4,8 +4,8 @@
 
   menuItems.forEach(item => {
     item.addEventListener('click', () => {
-      menuItems.forEach(el => el.classList.remove('active'));
-      item.classList.add('active');
+      menuItems.forEach(el => el.classList.remove('active-line-under-link'));
+      item.classList.add('active-line-under-link');
       dropdownMenu.classList.toggle('active-block');
     });
   });

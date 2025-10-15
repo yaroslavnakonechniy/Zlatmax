@@ -26,25 +26,7 @@
         color: $bg-dark;
         margin-bottom: 15px;
 
-
-        &::after{
-            position: absolute;
-            content: '';
-            bottom: -15px;
-            left: 0;
-            width: 68px;
-            height: 2px;
-            background-color: $color-for-active-text;
-
-            transition: width 1s ease-out;
-        }
-
-        &:hover::after{
-            width: 100%;
-        }
-
-
-
+        @include line-under-title;
     }
 
     &__line {
@@ -59,10 +41,6 @@
     }
 
     &__item {
-        
-        @include size-weight(18px, 500);
-        line-height: 34px;
-
         position: relative;
         padding-left: 20px;
 
@@ -77,6 +55,12 @@
             background-color: $color-for-active-text;
             border-radius: 50%;
         }
+    }
+
+    &__link{
+        @include size-weight(18px, 500);
+        line-height: 34px;
+        color: $color-for-text-dark;
     }
 }
 
