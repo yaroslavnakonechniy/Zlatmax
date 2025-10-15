@@ -6,15 +6,15 @@
     item.addEventListener('click', () => {
       menuItems.forEach(el => el.classList.remove('active'));
       item.classList.add('active');
-      dropdownMenu.classList.toggle('active-menu');
+      dropdownMenu.classList.toggle('active-block');
     });
   });
 
 
-  const headerButtonArrow = document.querySelector('.button-arrow');
+  const headerButtonArrow = document.querySelector('.header__button-arrow');
   const headerNumbers = document.querySelector('.button-arrow__numbers');
 
   headerButtonArrow.addEventListener('click', () => {
     headerButtonArrow.classList.toggle('active-arrow');
-    headerNumbers.classList.toggle('active-menu');
+    headerNumbers.classList.toggle('active-block-numbers');
   });
