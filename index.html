@@ -48,7 +48,7 @@
                         <div class="header__phone">
                             <div class="header__numbers-box">
                                 <a class="header__phone-link" href="#">8-800-777-49-67</a>
-                                <span class="button-arrow"></span>
+                                <span class="header__button-arrow"></span>
                                 <div class="button-arrow__numbers">
                                     <ul class="button-arrow__numbers-list">
                                         <li class="button-arrow__numbers-item"><a href="" class="button-arrow__numbers-link">8-800-777-49-67</a></li>
@@ -182,8 +182,8 @@
                 <div class="main__block-body">
                     <div class="main__block-slider">
                         <div class="main__block-slider-block">
-                            <div class="main__block-slider-body">
-                                <div class="main__slider">
+                            <div class="main__block-slider-body js-slider">
+                                <div class="main__slider-item">
                                     <h1 class="main__title"><span class="title-bold">Интернет магазин сертифицированных<br></span>златоустовских ножей</h1>
                                     <p class="main__description">
                                         <span class="text-800">Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем магазине </span><br>
@@ -193,8 +193,8 @@
 
                                     <button class="btn-button main__button">Подробнее</button>
                                 </div>
-                                <!-- slider
-                                <div class="main__slider">
+                                
+                                <div class="main__slider-item">
                                     <h1 class="main__title"><span class="title-bold">Интернет магазин сертифицированных<br></span>златоустовских ножей</h1>
                                     <p class="main__description">
                                         <span class="text-800">Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем магазине </span><br>
@@ -204,7 +204,7 @@
 
                                     <button class="btn-button main__button">Подробнее</button>
                                 </div>
-                                <div class="main__slider">
+                                <div class="main__slider-item">
                                     <h1 class="main__title"><span class="title-bold">Интернет магазин сертифицированных<br></span>златоустовских ножей</h1>
                                     <p class="main__description">
                                         <span class="text-800">Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем магазине </span><br>
@@ -214,7 +214,7 @@
 
                                     <button class="btn-button main__button">Подробнее</button>
                                 </div>
-                                -->
+                                
                             </div>
                             <div class="block-controlls">
                                 <div class="controlls-line">
@@ -270,7 +270,6 @@
                     <div class="catalog__card bg-card-01">
                         
                         <h3 class="catalog__title">Каталог ножей</h3>
-                        <span class="catalog__line"></span>
                         <ul class="catalog__list">
                             <li class="catalog__item">Разделочные</li>
                             <li class="catalog__item">Туристические</li>
@@ -282,7 +281,6 @@
                     <div class="catalog__card bg-card-02">
                         
                         <h3 class="catalog__title">Среднеклинковое оружие</h3>
-                        <span class="catalog__line"></span>
                         <ul class="catalog__list">
                             <li class="catalog__item">Разделочные</li>
                             <li class="catalog__item">Туристические</li>
@@ -294,7 +292,6 @@
                     <div class="catalog__card bg-card-03">
                         
                         <h3 class="catalog__title">Длинноклинковое оружие</h3>
-                        <span class="catalog__line"></span>
                         <ul class="catalog__list">
                             <li class="catalog__item">Разделочные</li>
                             <li class="catalog__item">Туристические</li>
@@ -306,7 +303,6 @@
                     <div class="catalog__card bg-card-04">
                         
                         <h3 class="catalog__title">Сувенирные изделия</h3>
-                        <span class="catalog__line"></span>
                         <ul class="catalog__list">
                             <li class="catalog__item">Разделочные</li>
                             <li class="catalog__item">Туристические</li>
@@ -318,7 +314,6 @@
                     <div class="catalog__card bg-card-05">
                         
                         <h3 class="catalog__title">Сопутствующие товары</h3>
-                        <span class="catalog__line"></span>
                         <ul class="catalog__list">
                             <li class="catalog__item">Разделочные</li>
                             <li class="catalog__item">Туристические</li>
@@ -330,7 +325,6 @@
                     <div class="catalog__card bg-card-06">
                     
                         <h3 class="catalog__title">Ножевая мастерская</h3>
-                        <span class="catalog__line"></span>
                         <ul class="catalog__list">
                             <li class="catalog__item">Разделочные</li>
                             <li class="catalog__item">Туристические</li>
@@ -344,10 +338,10 @@
 
         <section class="main__hit">
             <div class="container">
-                <div class="product__body">
-                    <div class="product__header">
-                        <h2 class="product__title title">Хиты продаж</h2>
-                        <a class="product__link link-arrow" href="#">Перейти в каталог</a>
+                <div class="main__hit-body">
+                    <div class="block__title-link">
+                        <h2 class="block__title title">Хиты продаж</h2>
+                        <a class="block__link link-arrow" href="#">Перейти в каталог</a>
                     </div>
                     <div class="product__carusel">
                         <div class="product__cards">
@@ -591,9 +585,9 @@
         <section class="main__shares">
             <div class="container">
                 <div class="product__body">
-                    <div class="product__header">
-                        <h2 class="product__title title">Aкції</h2>
-                        <a class="product__link link-arrow" href="#">Все акції</a>
+                    <div class="block__title-link">
+                        <h2 class="block__title title">Aкції</h2>
+                        <a class="block__link link-arrow" href="#">Все акції</a>
                     </div>
                     <div class="product__carusel">
                         <div class="product__cards">
@@ -723,9 +717,9 @@
         <section class="main__shares">
             <div class="container">
                 <div class="product__body">
-                    <div class="product__header">
-                        <h2 class="product__title title">Aкції</h2>
-                        <a class="product__link link-arrow" href="#">Все акції</a>
+                    <div class="block__title-link">
+                        <h2 class="block__title title">Aкції</h2>
+                        <a class="block__link link-arrow" href="#">Все акції</a>
                     </div>
                     <div class="product__carusel">
                         <div class="product__cards">
@@ -969,9 +963,9 @@
         <section class="main__shares">
             <div class="container">
                 <div class="product__body">
-                    <div class="product__header">
-                        <h2 class="product__title title">Aкції</h2>
-                        <a class="product__link link-arrow" href="#">Все акції</a>
+                    <div class="block__title-link">
+                        <h2 class="block__title title">Aкції</h2>
+                        <a class="block__link link-arrow" href="#">Все акції</a>
                     </div>
                     <div class="product__carusel">
                         <div class="product__cards">
@@ -1101,9 +1095,9 @@
         <section class="main__shares">
             <div class="container">
                 <div class="product__body">
-                    <div class="product__header">
-                        <h2 class="product__title title">Aкції</h2>
-                        <a class="product__link link-arrow" href="#">Все акції</a>
+                    <div class="block__title-link">
+                        <h2 class="block__title title">Aкції</h2>
+                        <a class="block__link link-arrow" href="#">Все акції</a>
                     </div>
                     <div class="product__carusel">
                         <div class="product__cards">
@@ -1295,9 +1289,9 @@
         <section class="main__light">
             <div class="container">
                 <div class="product__body">
-                    <div class="product__header">
-                        <h2 class="product__title title">Фонари</h2>
-                        <a class="product__link link-arrow" href="#">Перейти в каталог</a>
+                    <div class="block__title-link">
+                        <h2 class="block__title title">Фонари</h2>
+                        <a class="block__link link-arrow" href="#">Перейти в каталог</a>
                     </div>
                     <div class="product__carusel">
                         <div class="product__cards">
@@ -1633,5 +1627,6 @@
 
     </footer>
     <script src="./js/header/header.js"></script>
+    <script src="./js/block-slider/slider.js"></script>
 </body>
 </html>

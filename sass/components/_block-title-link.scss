@@ -1,0 +1,30 @@
+
+@use '../base/variables' as *;
+@use '../base/mixin' as *;
+
+.block{
+
+    &__title-link{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    
+    &__title{
+        color: $bg-dark;
+    }
+
+    &__link{
+        @include size-weight(18px, 600);
+        color: $color-for-actions-button;
+        transition: color 1s ease;
+
+        &:hover{
+            color: $color-for-text-dark;
+            transition: color 1s ease;
+        }
+    }
+
+
+}

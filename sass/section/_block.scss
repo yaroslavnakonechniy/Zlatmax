@@ -12,7 +12,7 @@
     }
 
     &__block-body{
-        
+
     }
 
     &__block-slider{
@@ -28,9 +28,16 @@
     }
 
     &__block-slider-body{
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        overflow: hidden;
+        transition: transform 0.6s cubic-bezier(.22,.9,.35,1);
+        will-change: transform;
 
+    }
+
+    &__slider-item{
+        flex: 0 0 100%;
+        box-sizing: border-box;
     }
 
     &__title{
