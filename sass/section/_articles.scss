@@ -35,12 +35,21 @@
             box-sizing: border-box;
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
             background-color: $color-for-text-white;
+            overflow: hidden;
+            box-sizing: border-box;
+            @include box-shadow;
 		}
 
 
 		&__card-image {
             width: 100%;
             margin-bottom: 20px;
+
+            
+            &:hover{
+                transform: scale(1.03);
+                transition: transform 1s ease;
+            }
 		}
 
         &__card-description{
